@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Red Engine | Placeholder Slogan</title>
+    <title>Project R.E.D. | Sovereign Knowledge Node Engine</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -25,25 +25,26 @@
 <body class="bg-slate-50 text-slate-800 font-sans antialiased">
 
     <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16">
-                <div class="flex items-center gap-2">
-                    <div class="w-8 h-8 bg-brand rounded flex items-center justify-center text-white font-bold text-xl">R</div>
-                    <span class="text-xl font-extrabold tracking-tight text-slate-900">Red<span class="text-brand">Engine</span></span>
+                <div class="flex items-center gap-3">
+                    <img src="assets/RED-Logo.svg" alt="Project R.E.D. Logo" class="w-8 h-8 min-w-[32px] min-h-[32px] object-contain flex-shrink-0">
+                    <span class="text-xl font-black tracking-tight text-slate-900">Project <span class="text-brand">R.E.D.</span></span>
                 </div>
                 
                 <div class="hidden md:flex items-center space-x-8 font-medium text-sm text-slate-600">
-                    <a href="#about" class="hover:text-brand transition-colors">About Us</a>
+                    <a href="#about" class="hover:text-brand transition-colors">Philosophy</a>
+                    <a href="#architecture" class="hover:text-brand transition-colors">Architecture</a>
                     <a href="#docs" class="hover:text-brand transition-colors">Documentation</a>
                     <a href="#installation" class="hover:text-brand transition-colors">Installation</a>
                 </div>
 
                 <div class="flex items-center gap-4">
-                    <a href="https://github.com" target="_blank" class="text-slate-700 hover:text-brand transition-colors text-xl" title="GitHub Repository">
+                    <a href="https://github.com/RED-Collective/red-engine" target="_blank" class="text-slate-700 hover:text-brand transition-colors text-xl" title="GitHub Repository">
                         <i class="fab fa-github"></i>
                     </a>
                     <a href="#download" class="bg-brand hover:bg-brand-dark text-white px-4 py-2 rounded-lg text-sm font-semibold transition-all shadow-sm shadow-brand/20">
-                        Download
+                        Deploy Node
                     </a>
                 </div>
             </div>
@@ -51,117 +52,246 @@
     </nav>
 
     <header class="bg-white border-b border-slate-100 py-20 sm:py-28">
-        <div class="max-w-4xl mx-auto text-center px-4">
-            <span class="inline-flex items-center gap-1.5 py-1 px-3 rounded-full text-xs font-medium bg-red-50 text-brand border border-red-200/60 mb-6">
-                <span class="w-1.5 h-1.5 rounded-full bg-brand animate-pulse"></span> Open Source & Community Driven
+        <div class="max-w-5xl mx-auto text-center px-4">
+            <span class="inline-flex items-center gap-1.5 py-1 px-3 rounded-full text-xs font-semibold bg-red-50 text-brand border border-red-200/60 mb-6">
+                <span class="w-1.5 h-1.5 rounded-full bg-brand animate-pulse"></span> New Framework Build Initialized
             </span>
-            <h1 class="text-4xl sm:text-6xl font-black tracking-tight text-slate-900 mb-6">
-                Red <span class="text-brand">Engine</span>
+            <div class="flex justify-center mb-8">
+                <img src="assets/RED-Logo.svg" alt="Project R.E.D. Logo" class="w-8 h-8 object-contain flex-shrink-0">
+            </div>
+            <h1 class="text-4xl sm:text-6xl font-black tracking-tight text-slate-900 mb-4">
+                Sovereign Knowledge Node Engine
             </h1>
-            <p class="text-lg sm:text-xl text-slate-500 max-w-2xl mx-auto mb-10 leading-relaxed">
-                place holder slogan goes right here. Make it catchy, bold, and representative of your community's core mission.
+            <p class="text-lg sm:text-xl text-slate-500 max-w-3xl mx-auto mb-10 leading-relaxed">
+                Project R.E.D. systematically decouples the Independent Data Layer from the Social Curation Layer. No centralized databases. No complex consensus protocols. Raw Markdown to visually polarized technical templates with live cryptographic integrity signatures.
             </p>
             <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-                <a href="#download" class="w-full sm:w-auto bg-brand hover:bg-brand-dark text-white px-8 py-4 rounded-xl font-bold shadow-lg shadow-brand/20 transition-all flex items-center justify-center gap-2">
-                    <i class="fas fa-download"></i> Get Started
+                <a href="#installation" class="w-full sm:w-auto bg-brand hover:bg-brand-dark text-white px-8 py-4 rounded-xl font-bold shadow-lg shadow-brand/20 transition-all flex items-center justify-center gap-2">
+                    <i class="fas fa-terminal"></i> Quick Installation
                 </a>
-                <a href="#docs" class="w-full sm:w-auto bg-slate-100 hover:bg-slate-200 text-slate-700 px-8 py-4 rounded-xl font-bold transition-all flex items-center justify-center gap-2">
-                    Read Docs
+                <a href="https://github.com/RED-Collective/red-engine" target="_blank" class="w-full sm:w-auto bg-slate-100 hover:bg-slate-200 text-slate-700 px-8 py-4 rounded-xl font-bold transition-all flex items-center justify-center gap-2">
+                    <i class="fab fa-github"></i> GitHub Repository
                 </a>
             </div>
         </div>
     </header>
 
-    <section id="about" class="py-20 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="about" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center max-w-2xl mx-auto mb-16">
-            <h2 class="text-3xl font-extrabold text-slate-900 mb-4">About Us</h2>
-            <div class="h-1 w-12 bg-brand mx-auto rounded"></div>
+            <h2 class="text-3xl font-extrabold text-slate-900 mb-2">Red Sovereignty Philosophy</h2>
+            <p class="text-slate-500 text-sm">The internet architectural flaws and the R.E.D. corrections.</p>
+            <div class="h-1 w-12 bg-brand mx-auto rounded mt-4"></div>
         </div>
 
-        <div class="grid md:grid-cols-3 gap-8">
-            <div class="bg-white p-8 rounded-2xl border border-slate-200/60 shadow-sm">
-                <div class="w-12 h-12 bg-red-50 text-brand rounded-xl flex items-center justify-center text-xl mb-6 font-bold">
-                    <i class="fas fa-bolt"></i>
+        <div class="grid md:grid-cols-2 gap-12">
+            <div class="space-y-6">
+                <h3 class="text-xl font-black text-slate-900 flex items-center gap-2 border-b pb-3 border-slate-200">
+                    <span class="text-brand"><i class="fas fa-circle-xmark"></i></span> The Failures of Centralization
+                </h3>
+                <div class="space-y-4">
+                    <div>
+                        <h4 class="font-bold text-slate-900 text-sm">Single Point of Failure</h4>
+                        <p class="text-slate-500 text-xs mt-1">Gathering technical knowledge onto a single domain creates an existential target for corporate lawfare, censorship, and state suppression.</p>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-slate-900 text-sm">Financial Conflict of Interest</h4>
+                        <p class="text-slate-500 text-xs mt-1">Platforms reliant on ads or affiliate percentages prioritize expensive corporate partner assets over raw, cost-effective tutorials.</p>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-slate-900 text-sm">The Gamified Trust Trap & Jury Delusions</h4>
+                        <p class="text-slate-500 text-xs mt-1">Elo rankings and uncompensated expert juries lock out real, outside professionals while creating exclusive, closed digital aristocracies.</p>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-slate-900 text-sm">Dependency Hell of Linear Hierarchies</h4>
+                        <p class="text-slate-500 text-xs mt-1">Enforcing a top-down chain breaks every cascading guide built on top if a single foundational tool becomes obsolete.</p>
+                    </div>
                 </div>
-                <h3 class="text-lg font-bold text-slate-900 mb-2">High Performance</h3>
-                <p class="text-slate-500 text-sm leading-relaxed">Engineered with speed and optimization in mind. Built to handle intensive tasks seamlessly.</p>
             </div>
 
-            <div class="bg-white p-8 rounded-2xl border border-slate-200/60 shadow-sm">
-                <div class="w-12 h-12 bg-red-50 text-brand rounded-xl flex items-center justify-center text-xl mb-6 font-bold">
-                    <i class="fas fa-users"></i>
+            <div class="space-y-6">
+                <h3 class="text-xl font-black text-slate-900 flex items-center gap-2 border-b pb-3 border-slate-200">
+                    <span class="text-emerald-500"><i class="fas fa-circle-check"></i></span> How R.E.D. Fixes This
+                </h3>
+                <div class="space-y-4">
+                    <div>
+                        <h4 class="font-bold text-slate-900 text-sm">Stateless Containerized Engine</h4>
+                        <p class="text-slate-500 text-xs mt-1">Operates without a single master domain, eliminating centralized attack vendors entirely from legal or structural takedowns.</p>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-slate-900 text-sm">Ethical Opt-In Node Monetization</h4>
+                        <p class="text-slate-500 text-xs mt-1">Node operators simply create a transparency-focused <code>Requirements.md</code> file inside a guide's folder to direct funds to themselves—never a central host.</p>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-slate-900 text-sm">Outsourced Content Social Curation</h4>
+                        <p class="text-slate-500 text-xs mt-1">Bypasses native bot defense firewalls and custom algorithmic scaling bottlenecks by relying on external platforms like Reddit or Discord.</p>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-slate-900 text-sm">Native Filesystem Architecture</h4>
+                        <p class="text-slate-500 text-xs mt-1">Leverages computer directories for dynamic variation tracking, allowing guides to adapt organically without cascading breaks.</p>
+                    </div>
                 </div>
-                <h3 class="text-lg font-bold text-slate-900 mb-2">Community First</h3>
-                <p class="text-slate-500 text-sm leading-relaxed">Backed by an incredible developer community. Share modules, scripts, and collaborate effortlessly.</p>
-            </div>
-
-            <div class="bg-white p-8 rounded-2xl border border-slate-200/60 shadow-sm">
-                <div class="w-12 h-12 bg-red-50 text-brand rounded-xl flex items-center justify-center text-xl mb-6 font-bold">
-                    <i class="fas fa-code"></i>
-                </div>
-                <h3 class="text-lg font-bold text-slate-900 mb-2">Fully Extensible</h3>
-                <p class="text-slate-500 text-sm leading-relaxed">Modular setup allowing you to inject your own custom features and extend functionality anytime.</p>
             </div>
         </div>
     </section>
 
-    <section id="docs" class="bg-white border-t border-b border-slate-200 py-20">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="architecture" class="bg-white border-t border-b border-slate-200 py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-3xl font-extrabold text-slate-900 mb-2">Core Architectural Counter-Measures</h2>
+                <p class="text-slate-500 text-sm">Hard-coded protection mechanisms deployed at the engine layer.</p>
+                <div class="h-1 w-12 bg-brand mx-auto rounded mt-4"></div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-slate-50 p-6 rounded-xl border border-slate-200">
+                    <div class="w-10 h-10 bg-red-50 text-brand rounded-lg flex items-center justify-center text-lg font-bold mb-4">
+                        <i class="fas fa-key"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-900 mb-2">Ed25519 & SHA-256 Signatures</h3>
+                    <p class="text-slate-500 text-xs leading-relaxed">Computes hashes over raw contents on every request loop, verifying them against signatures mapped inside decentralized local manifests.</p>
+                </div>
+
+                <div class="bg-slate-50 p-6 rounded-xl border border-slate-200">
+                    <div class="w-10 h-10 bg-red-50 text-brand rounded-lg flex items-center justify-center text-lg font-bold mb-4">
+                        <i class="fas fa-shield-halved"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-900 mb-2">Stateless Immunity</h3>
+                    <p class="text-slate-500 text-xs leading-relaxed">Contains no dynamic SQL/NoSQL software dependency loops to exploit, breach, or corrupt. Minimum memory overhead, zero storage search latency.</p>
+                </div>
+
+                <div class="bg-slate-50 p-6 rounded-xl border border-slate-200">
+                    <div class="w-10 h-10 bg-red-50 text-brand rounded-lg flex items-center justify-center text-lg font-bold mb-4">
+                        <i class="fas fa-share-nodes"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-900 mb-2">Instant Mirror API</h3>
+                    <p class="text-slate-500 text-xs leading-relaxed">Features a built-in <code>/-/admin</code> ingestion endpoint allowing node operators to replicate remote raw GitHub repositories or archives cleanly onto physical storage loops.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="docs" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid lg:grid-cols-12 gap-12">
                 
-                <div class="lg:col-span-4 lg:sticky lg:top-24 h-fit space-y-3">
-                    <h3 class="text-xs font-bold uppercase tracking-wider text-slate-400 px-3">Documentation</h3>
-                    <a href="#quickstart" class="block px-3 py-2 text-sm font-medium text-brand bg-red-50 rounded-lg">Quickstart Guide</a>
-                    <a href="#installation" class="block px-3 py-2 text-sm font-medium text-slate-600 hover:text-brand rounded-lg transition-colors">Installation Manual</a>
-                    <a href="#configuration" class="block px-3 py-2 text-sm font-medium text-slate-600 hover:text-brand rounded-lg transition-colors">Configuration</a>
+                <div class="lg:col-span-4 lg:sticky lg:top-24 h-fit space-y-2">
+                    <h3 class="text-xs font-bold uppercase tracking-wider text-slate-400 px-3 mb-3">Documentation Engine</h3>
+                    <a href="#quickstart" class="block px-3 py-2 text-sm font-medium text-brand bg-red-50 rounded-lg">Technical Stack Blueprint</a>
+                    <a href="#installation" class="block px-3 py-2 text-sm font-medium text-slate-600 hover:text-brand rounded-lg transition-colors">Installation & Deployment</a>
+                    <a href="#token-management" class="block px-3 py-2 text-sm font-medium text-slate-600 hover:text-brand rounded-lg transition-colors">Admin Token Configuration</a>
+                    <a href="#verification-depth" class="block px-3 py-2 text-sm font-medium text-slate-600 hover:text-brand rounded-lg transition-colors">Cryptographic Verification Flow</a>
+                    <a href="#filesystem-structure" class="block px-3 py-2 text-sm font-medium text-slate-600 hover:text-brand rounded-lg transition-colors">Simulating File Systems</a>
                 </div>
 
                 <div class="lg:col-span-8 space-y-16">
                     
                     <div id="quickstart">
-                        <h2 class="text-2xl font-bold text-slate-900 mb-4">Quickstart Guide</h2>
-                        <p class="text-slate-600 mb-4 leading-relaxed">
-                            Welcome to the Red Engine documentation portal. Getting your environment ready takes less than two minutes. Follow our breakdown to initialize your first project framework instance.
-                        </p>
+                        <h2 class="text-2xl font-black text-slate-900 mb-2">Technical Stack Blueprint</h2>
+                        <p class="text-slate-600 mb-6 text-sm">The platform architecture uses lightweight, performant compiled layers built entirely without traditional database layers.</p>
+                        <div class="grid sm:grid-cols-2 gap-4 text-xs">
+                            <div class="bg-white p-4 rounded-xl border border-slate-200"><strong class="text-slate-900 block mb-1">Runtime Architecture</strong>Go (Golang) — Memory-safe static binary compilation targeting zero virtual machine processing overhead.</div>
+                            <div class="bg-white p-4 rounded-xl border border-slate-200"><strong class="text-slate-900 block mb-1">Parser Core</strong>goldmark Engine — Fully standardized CommonMark specification compliance.</div>
+                            <div class="bg-white p-4 rounded-xl border border-slate-200"><strong class="text-slate-900 block mb-1">Sanitization Protocol</strong>bluemonday Engine — Rigid user-content extraction tracking preventing cross-site scripting (XSS).</div>
+                            <div class="bg-white p-4 rounded-xl border border-slate-200"><strong class="text-slate-900 block mb-1">Runtime Target</strong>Podman / Docker — Isolated multi-stage Alpine pipeline definitions targeting simple local network orchestration.</div>
+                        </div>
                     </div>
 
                     <hr class="border-slate-200">
 
                     <div id="installation">
-                        <h2 class="text-2xl font-bold text-slate-900 mb-4">Installation Manual</h2>
-                        <p class="text-slate-600 mb-6 leading-relaxed">
-                            Run the following commands directly inside your terminal or deployment environment environment setup scripts.
-                        </p>
+                        <h2 class="text-2xl font-black text-slate-900 mb-2">Installation & Deployment Manual</h2>
+                        <p class="text-slate-600 mb-6 text-sm">Ensure your network environment matches basic requirements: Podman or Docker (with Compose V2), Git, and an accessible terminal runner.</p>
 
                         <div class="mb-6">
-                            <span class="text-xs font-bold uppercase tracking-wider text-brand block mb-2">Step 1: Fetch core binaries</span>
-                            <div class="bg-slate-900 text-slate-200 p-4 rounded-xl font-mono text-sm shadow-inner relative group">
-                                <span class="text-emerald-400">$</span> git clone https://github.com/your-repo/red-engine.git
+                            <span class="text-xs font-bold uppercase tracking-wider text-brand block mb-2"><i class="fab fa-linux"></i> Linux / macOS One-Liner</span>
+                            <div class="bg-slate-900 text-slate-200 p-4 rounded-xl font-mono text-xs shadow-inner overflow-x-auto">
+                                <span class="text-emerald-400"># Installs automated node context instantly</span><br>
+                                <span class="text-brand">curl</span> -sSL https://raw.githubusercontent.com/RED-Collective/red-engine/main/install-red-engine.sh | bash
                             </div>
                         </div>
 
                         <div class="mb-6">
-                            <span class="text-xs font-bold uppercase tracking-wider text-brand block mb-2">Step 2: Enter directory & Build</span>
-                            <div class="bg-slate-900 text-slate-200 p-4 rounded-xl font-mono text-sm shadow-inner">
-                                <span class="text-emerald-400">$</span> cd red-engine && npm install
+                            <span class="text-xs font-bold uppercase tracking-wider text-brand block mb-2"><i class="fab fa-windows"></i> Windows (PowerShell as Administrator)</span>
+                            <div class="bg-slate-900 text-slate-200 p-4 rounded-xl font-mono text-xs shadow-inner overflow-x-auto">
+                                <span class="text-emerald-400">Set-ExecutionPolicy</span> Bypass -Scope Process -Force<br>
+                                <span class="text-brand">iex</span> (irm https://raw.githubusercontent.com/RED-Collective/red-engine/main/install-red-engine.ps1)
                             </div>
                         </div>
 
                         <div>
-                            <span class="text-xs font-bold uppercase tracking-wider text-brand block mb-2">Step 3: Run Engine Environment</span>
-                            <div class="bg-slate-900 text-slate-200 p-4 rounded-xl font-mono text-sm shadow-inner">
-                                <span class="text-emerald-400">$</span> npm run dev
+                            <span class="text-xs font-bold uppercase tracking-wider text-slate-400 block mb-2">Manual Multi-Stage Pipeline Instructions</span>
+                            <div class="bg-slate-900 text-slate-200 p-4 rounded-xl font-mono text-xs shadow-inner space-y-2 overflow-x-auto">
+                                <div><span class="text-slate-500"># 1. Clone Core Binaries</span><br><span class="text-brand">git clone</span> https://github.com/RED-Collective/red-engine.git && <span class="text-brand">cd</span> red-engine</div>
+                                <div><span class="text-slate-500"># 2. Configure Local Settings</span><br><span class="text-brand">cp</span> config.json.example config.json</div>
+                                <div><span class="text-slate-500"># 3. Spin Container Isolation Layers</span><br><span class="text-brand">podman-compose</span> up --build -d <span class="text-slate-400"># Or fallback to docker compose</span></div>
                             </div>
                         </div>
                     </div>
 
                     <hr class="border-slate-200">
 
-                    <div id="configuration">
-                        <h2 class="text-2xl font-bold text-slate-900 mb-4">Core Settings Configuration</h2>
-                        <p class="text-slate-600 mb-4 leading-relaxed">
-                            Modify default parameters inside your root configuration files to alter runtime parameters, module flags, and integration environments.
+                    <div id="token-management">
+                        <h2 class="text-2xl font-black text-slate-900 mb-2">Admin Token Configuration</h2>
+                        <p class="text-slate-600 mb-4 text-sm">
+                            The administration console mapped to <code>/-/admin</code> is locked via a unique cryptographically secure <code>adminToken</code> string parsed directly from the environment initialization routine. Use internal system helpers to re-verify or change signatures.
                         </p>
+                        <div class="bg-slate-900 text-slate-200 p-4 rounded-xl font-mono text-xs shadow-inner overflow-x-auto space-y-3">
+                            <div>
+                                <span class="text-slate-500"># Execute token update verification parameters inside Linux/macOS</span><br>
+                                <span class="text-emerald-400">./manage-token.sh</span>
+                            </div>
+                            <div>
+                                <span class="text-slate-500"># Execute token update verification parameters inside Windows PowerShell environments</span><br>
+                                <span class="text-emerald-400">.\manage-token.ps1</span>
+                            </div>
+                        </div>
+                        <p class="text-slate-500 text-xs mt-3">After generating new tokens, ensure you call <code>podman-compose restart red_engine</code> to pass environment parameters directly into the Go system container variables.</p>
+                    </div>
+
+                    <hr class="border-slate-200">
+
+                    <div id="verification-depth">
+                        <h2 class="text-2xl font-black text-slate-900 mb-2">Cryptographic Verification Protocols</h2>
+                        <p class="text-slate-600 mb-4 text-sm">
+                            R.E.D. calculates verification dynamically using <strong>Ed25519</strong> signing operations over standard raw content strings against signatures stored inside isolated <code>manifest.json</code> parameters.
+                        </p>
+
+                        <span class="text-xs font-bold text-slate-400 block mb-2">Example Node Vault Manifest Arrangement (manifest.json)</span>
+                        <div class="bg-slate-900 text-slate-200 p-4 rounded-xl font-mono text-xs shadow-inner overflow-x-auto mb-4">
+<pre>{
+  "relative/path/to/file.md": {
+    "file_hash": "20bcee7014ad5cff...",
+    "public_key": "66f32e250b0bafb2...",
+    "signature": "61dcac5bd139dca0..."
+  }
+}</pre>
+                        </div>
+
+                        <span class="text-xs font-bold text-slate-400 block mb-2">Request Loop Execution Model</span>
+                        <ol class="list-decimal list-inside text-xs text-slate-600 space-y-2 bg-white p-4 rounded-xl border border-slate-200">
+                            <li>The engine tracks the active route, maps file location targets, and parses raw markdown text into local tracking chains.</li>
+                            <li>The engine calculates the <strong>SHA-256</strong> hash signature block dynamically and compares tracking fields with the manifest keys.</li>
+                            <li>If hash matching values match cleanly, the Go runtime performs cross-verification of the Ed25519 payload array utilizing public keys stored inside repository root tracking tables (<code>contributors.json</code>).</li>
+                            <li>Passing metrics automatically generates an inline <span class="inline-flex items-center gap-1 bg-emerald-50 text-emerald-700 px-2 py-0.5 rounded border border-emerald-200 font-bold font-sans">✅ Verified Contributor</span> badge while appending the absolute tracking hash into the template footers for manual operator configuration scans.</li>
+                        </ol>
+                    </div>
+
+                    <hr class="border-slate-200">
+
+                    <div id="filesystem-structure">
+                        <h2 class="text-2xl font-black text-slate-900 mb-2">Simulating Decentralized Knowledge Base Structures</h2>
+                        <p class="text-slate-600 mb-4 text-sm">
+                            Rather than enforcing top-down structures that cause configuration validation breakages, Project R.E.D. resolves native filesystem arrangements into active dynamic routing maps directly.
+                        </p>
+                        <div class="bg-slate-900 text-slate-200 p-4 rounded-xl font-mono text-xs shadow-inner overflow-x-auto">
+<pre>data/
+└── remote/
+    └── solar-array-build/
+        ├── 00-index.md
+        ├── 01-wiring-schematics-v1.0.md
+        └── 02-inverter-fusing.md</pre>
+                        </div>
+                        <p class="text-slate-500 text-xs mt-3">The framework loops the configuration fields and outputs transparent, performant routing sequences visible directly via: <code class="bg-slate-100 text-brand px-1.5 py-0.5 rounded border border-slate-200">http://your-node/remote/solar-array-build/00-index</code></p>
                     </div>
 
                 </div>
@@ -169,36 +299,35 @@
         </div>
     </section>
 
-    <section id="download" class="py-20 bg-slate-50">
+    <section id="download" class="bg-slate-900 text-white py-16 border-t-4 border-brand">
         <div class="max-w-4xl mx-auto text-center px-4">
-            <div class="w-16 h-16 bg-brand text-white rounded-2xl flex items-center justify-center text-2xl mx-auto mb-6 shadow-md shadow-brand/20">
-                <i class="fas fa-box-open"></i>
-            </div>
-            <h2 class="text-3xl font-extrabold text-slate-900 mb-4">Download Center</h2>
-            <p class="text-slate-500 max-w-lg mx-auto mb-8">Access the stable build of Red Engine. Ensure your system satisfies standard environments components before compilation.</p>
+            <h2 class="text-3xl font-black mb-2">Claim Your Agency.</h2>
+            <p class="text-slate-400 max-w-lg mx-auto text-sm mb-8">We do not need capital. We do not need permission. We do not need a master website. Run a local container network node manually today.</p>
             
-            <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm inline-flex flex-col sm:flex-row items-center gap-6 sm:gap-12">
-                <div class="text-left">
-                    <span class="block font-bold text-slate-900 text-lg">Red Engine v1.0.0-Stable</span>
-                    <span class="block text-xs text-slate-400">Latest Build • Compiled recently</span>
+            <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700 inline-flex flex-col sm:flex-row items-center gap-6 sm:gap-12 text-left">
+                <div>
+                    <span class="block font-bold text-white text-md">Project R.E.D. Core Source</span>
+                    <span class="block text-xs text-slate-400 font-mono mt-1">Clearnet Execution Container Pipeline Layout</span>
                 </div>
-                <a href="#" class="bg-brand hover:bg-brand-dark text-white font-bold px-6 py-3 rounded-xl text-sm transition-colors whitespace-nowrap">
-                    Download Stable Build (.zip)
+                <a href="https://github.com/RED-Collective/red-engine" target="_blank" class="bg-brand hover:bg-brand-dark text-white font-bold px-6 py-3 rounded-xl text-xs transition-colors tracking-wide uppercase shadow-lg shadow-brand/20">
+                    <i class="fab fa-github mr-1"></i> Access GitHub Source
                 </a>
             </div>
         </div>
     </section>
 
     <footer class="bg-white border-t border-slate-200 py-8">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-slate-400">
-            <div>
-                &copy; 2026 <span class="text-slate-700 font-semibold">Red Engine Community</span>. All rights reserved.
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
+            <div class="flex items-center gap-2">
+                <svg class="w-4 h-4 text-brand" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M50 5 L90 28 L90 72 L50 95 L10 72 L10 28 Z" stroke="currentColor" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>&copy; 2026 <span class="text-slate-700 font-semibold">Project R.E.D. Collective</span>. Free and open source infrastructure.</span>
             </div>
-            <div class="flex items-center space-x-6">
-                <a href="https://github.com" target="_blank" class="hover:text-slate-600 transition-colors flex items-center gap-1.5">
-                    <i class="fab fa-github"></i> GitHub
-                </a>
-                <a href="#docs" class="hover:text-slate-600 transition-colors">Documentation</a>
+            <div class="flex items-center space-x-6 font-medium">
+                <a href="https://github.com/RED-Collective/red-engine" target="_blank" class="hover:text-brand text-slate-600 transition-colors"><i class="fab fa-github"></i> Source Code</a>
+                <a href="#about" class="hover:text-brand text-slate-600 transition-colors">Philosophy Manifesto</a>
+                <a href="#docs" class="hover:text-brand text-slate-600 transition-colors">Technical Architecture</a>
             </div>
         </div>
     </footer>
