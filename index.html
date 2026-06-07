@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Engine | Placeholder Slogan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            light: '#ff3333',
+                            DEFAULT: '#e50000',
+                            dark: '#b30000',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+
+    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center gap-2">
+                    <div class="w-8 h-8 bg-brand rounded flex items-center justify-center text-white font-bold text-xl">R</div>
+                    <span class="text-xl font-extrabold tracking-tight text-slate-900">Red<span class="text-brand">Engine</span></span>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-8 font-medium text-sm text-slate-600">
+                    <a href="#about" class="hover:text-brand transition-colors">About Us</a>
+                    <a href="#docs" class="hover:text-brand transition-colors">Documentation</a>
+                    <a href="#installation" class="hover:text-brand transition-colors">Installation</a>
+                </div>
+
+                <div class="flex items-center gap-4">
+                    <a href="https://github.com" target="_blank" class="text-slate-700 hover:text-brand transition-colors text-xl" title="GitHub Repository">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#download" class="bg-brand hover:bg-brand-dark text-white px-4 py-2 rounded-lg text-sm font-semibold transition-all shadow-sm shadow-brand/20">
+                        Download
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-white border-b border-slate-100 py-20 sm:py-28">
+        <div class="max-w-4xl mx-auto text-center px-4">
+            <span class="inline-flex items-center gap-1.5 py-1 px-3 rounded-full text-xs font-medium bg-red-50 text-brand border border-red-200/60 mb-6">
+                <span class="w-1.5 h-1.5 rounded-full bg-brand animate-pulse"></span> Open Source & Community Driven
+            </span>
+            <h1 class="text-4xl sm:text-6xl font-black tracking-tight text-slate-900 mb-6">
+                Red <span class="text-brand">Engine</span>
+            </h1>
+            <p class="text-lg sm:text-xl text-slate-500 max-w-2xl mx-auto mb-10 leading-relaxed">
+                place holder slogan goes right here. Make it catchy, bold, and representative of your community's core mission.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="#download" class="w-full sm:w-auto bg-brand hover:bg-brand-dark text-white px-8 py-4 rounded-xl font-bold shadow-lg shadow-brand/20 transition-all flex items-center justify-center gap-2">
+                    <i class="fas fa-download"></i> Get Started
+                </a>
+                <a href="#docs" class="w-full sm:w-auto bg-slate-100 hover:bg-slate-200 text-slate-700 px-8 py-4 rounded-xl font-bold transition-all flex items-center justify-center gap-2">
+                    Read Docs
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="py-20 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+            <h2 class="text-3xl font-extrabold text-slate-900 mb-4">About Us</h2>
+            <div class="h-1 w-12 bg-brand mx-auto rounded"></div>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-white p-8 rounded-2xl border border-slate-200/60 shadow-sm">
+                <div class="w-12 h-12 bg-red-50 text-brand rounded-xl flex items-center justify-center text-xl mb-6 font-bold">
+                    <i class="fas fa-bolt"></i>
+                </div>
+                <h3 class="text-lg font-bold text-slate-900 mb-2">High Performance</h3>
+                <p class="text-slate-500 text-sm leading-relaxed">Engineered with speed and optimization in mind. Built to handle intensive tasks seamlessly.</p>
+            </div>
+
+            <div class="bg-white p-8 rounded-2xl border border-slate-200/60 shadow-sm">
+                <div class="w-12 h-12 bg-red-50 text-brand rounded-xl flex items-center justify-center text-xl mb-6 font-bold">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h3 class="text-lg font-bold text-slate-900 mb-2">Community First</h3>
+                <p class="text-slate-500 text-sm leading-relaxed">Backed by an incredible developer community. Share modules, scripts, and collaborate effortlessly.</p>
+            </div>
+
+            <div class="bg-white p-8 rounded-2xl border border-slate-200/60 shadow-sm">
+                <div class="w-12 h-12 bg-red-50 text-brand rounded-xl flex items-center justify-center text-xl mb-6 font-bold">
+                    <i class="fas fa-code"></i>
+                </div>
+                <h3 class="text-lg font-bold text-slate-900 mb-2">Fully Extensible</h3>
+                <p class="text-slate-500 text-sm leading-relaxed">Modular setup allowing you to inject your own custom features and extend functionality anytime.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="docs" class="bg-white border-t border-b border-slate-200 py-20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12">
+                
+                <div class="lg:col-span-4 lg:sticky lg:top-24 h-fit space-y-3">
+                    <h3 class="text-xs font-bold uppercase tracking-wider text-slate-400 px-3">Documentation</h3>
+                    <a href="#quickstart" class="block px-3 py-2 text-sm font-medium text-brand bg-red-50 rounded-lg">Quickstart Guide</a>
+                    <a href="#installation" class="block px-3 py-2 text-sm font-medium text-slate-600 hover:text-brand rounded-lg transition-colors">Installation Manual</a>
+                    <a href="#configuration" class="block px-3 py-2 text-sm font-medium text-slate-600 hover:text-brand rounded-lg transition-colors">Configuration</a>
+                </div>
+
+                <div class="lg:col-span-8 space-y-16">
+                    
+                    <div id="quickstart">
+                        <h2 class="text-2xl font-bold text-slate-900 mb-4">Quickstart Guide</h2>
+                        <p class="text-slate-600 mb-4 leading-relaxed">
+                            Welcome to the Red Engine documentation portal. Getting your environment ready takes less than two minutes. Follow our breakdown to initialize your first project framework instance.
+                        </p>
+                    </div>
+
+                    <hr class="border-slate-200">
+
+                    <div id="installation">
+                        <h2 class="text-2xl font-bold text-slate-900 mb-4">Installation Manual</h2>
+                        <p class="text-slate-600 mb-6 leading-relaxed">
+                            Run the following commands directly inside your terminal or deployment environment environment setup scripts.
+                        </p>
+
+                        <div class="mb-6">
+                            <span class="text-xs font-bold uppercase tracking-wider text-brand block mb-2">Step 1: Fetch core binaries</span>
+                            <div class="bg-slate-900 text-slate-200 p-4 rounded-xl font-mono text-sm shadow-inner relative group">
+                                <span class="text-emerald-400">$</span> git clone https://github.com/your-repo/red-engine.git
+                            </div>
+                        </div>
+
+                        <div class="mb-6">
+                            <span class="text-xs font-bold uppercase tracking-wider text-brand block mb-2">Step 2: Enter directory & Build</span>
+                            <div class="bg-slate-900 text-slate-200 p-4 rounded-xl font-mono text-sm shadow-inner">
+                                <span class="text-emerald-400">$</span> cd red-engine && npm install
+                            </div>
+                        </div>
+
+                        <div>
+                            <span class="text-xs font-bold uppercase tracking-wider text-brand block mb-2">Step 3: Run Engine Environment</span>
+                            <div class="bg-slate-900 text-slate-200 p-4 rounded-xl font-mono text-sm shadow-inner">
+                                <span class="text-emerald-400">$</span> npm run dev
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr class="border-slate-200">
+
+                    <div id="configuration">
+                        <h2 class="text-2xl font-bold text-slate-900 mb-4">Core Settings Configuration</h2>
+                        <p class="text-slate-600 mb-4 leading-relaxed">
+                            Modify default parameters inside your root configuration files to alter runtime parameters, module flags, and integration environments.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="download" class="py-20 bg-slate-50">
+        <div class="max-w-4xl mx-auto text-center px-4">
+            <div class="w-16 h-16 bg-brand text-white rounded-2xl flex items-center justify-center text-2xl mx-auto mb-6 shadow-md shadow-brand/20">
+                <i class="fas fa-box-open"></i>
+            </div>
+            <h2 class="text-3xl font-extrabold text-slate-900 mb-4">Download Center</h2>
+            <p class="text-slate-500 max-w-lg mx-auto mb-8">Access the stable build of Red Engine. Ensure your system satisfies standard environments components before compilation.</p>
+            
+            <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm inline-flex flex-col sm:flex-row items-center gap-6 sm:gap-12">
+                <div class="text-left">
+                    <span class="block font-bold text-slate-900 text-lg">Red Engine v1.0.0-Stable</span>
+                    <span class="block text-xs text-slate-400">Latest Build • Compiled recently</span>
+                </div>
+                <a href="#" class="bg-brand hover:bg-brand-dark text-white font-bold px-6 py-3 rounded-xl text-sm transition-colors whitespace-nowrap">
+                    Download Stable Build (.zip)
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-white border-t border-slate-200 py-8">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-slate-400">
+            <div>
+                &copy; 2026 <span class="text-slate-700 font-semibold">Red Engine Community</span>. All rights reserved.
+            </div>
+            <div class="flex items-center space-x-6">
+                <a href="https://github.com" target="_blank" class="hover:text-slate-600 transition-colors flex items-center gap-1.5">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="#docs" class="hover:text-slate-600 transition-colors">Documentation</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
