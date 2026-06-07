@@ -21,6 +21,38 @@
         }
     </script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
+
+    <style>
+        /* Modern, Clean Minimalist Scrollbars for Dark Code Boxes */
+        ::-webkit-scrollbar {
+            height: 6px;
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0f172a; 
+            border-radius: 8px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #334155; 
+            border-radius: 8px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #e50000; 
+        }
+        * {
+            scrollbar-width: thin;
+            scrollbar-color: #334155 #0f172a;
+        }
+
+        /* Tweak Prism defaults to cleanly fit our design containers */
+        pre[class*="language-"] {
+            margin: 0 !important;
+            padding: 0 !important;
+            background: transparent !important;
+        }
+    </style>
 </head>
 <body class="bg-slate-50 text-slate-800 font-sans antialiased">
 
@@ -57,7 +89,7 @@
                 <span class="w-1.5 h-1.5 rounded-full bg-brand animate-pulse"></span> New Framework Build Initialized
             </span>
             <div class="flex justify-center mb-8">
-                <img src="assets/RED-Logo.svg" alt="Project R.E.D. Logo" class="w-8 h-8 object-contain flex-shrink-0">
+                <img src="assets/RED-Logo.svg" alt="Project R.E.D. Master Core Logo" class="w-24 h-24 min-w-[96px] min-h-[96px] object-contain filter drop-shadow-sm">
             </div>
             <h1 class="text-4xl sm:text-6xl font-black tracking-tight text-slate-900 mb-4">
                 Sovereign Knowledge Node Engine
@@ -170,128 +202,148 @@
         </div>
     </section>
 
-    <section id="docs" class="py-20">
+    <section id="docs" class="py-20 bg-slate-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid lg:grid-cols-12 gap-12">
                 
-                <div class="lg:col-span-4 lg:sticky lg:top-24 h-fit space-y-2">
-                    <h3 class="text-xs font-bold uppercase tracking-wider text-slate-400 px-3 mb-3">Documentation Engine</h3>
-                    <a href="#quickstart" class="block px-3 py-2 text-sm font-medium text-brand bg-red-50 rounded-lg">Technical Stack Blueprint</a>
-                    <a href="#installation" class="block px-3 py-2 text-sm font-medium text-slate-600 hover:text-brand rounded-lg transition-colors">Installation & Deployment</a>
-                    <a href="#token-management" class="block px-3 py-2 text-sm font-medium text-slate-600 hover:text-brand rounded-lg transition-colors">Admin Token Configuration</a>
-                    <a href="#verification-depth" class="block px-3 py-2 text-sm font-medium text-slate-600 hover:text-brand rounded-lg transition-colors">Cryptographic Verification Flow</a>
-                    <a href="#filesystem-structure" class="block px-3 py-2 text-sm font-medium text-slate-600 hover:text-brand rounded-lg transition-colors">Simulating File Systems</a>
+                <div class="lg:col-span-4 lg:sticky lg:top-24 h-fit space-y-1 bg-white p-4 rounded-2xl border border-slate-200 shadow-sm">
+                    <h3 class="text-xs font-black uppercase tracking-wider text-slate-400 px-3 mb-4">Documentation Directory</h3>
+                    <a href="#quickstart" class="block px-3 py-2.5 text-sm font-semibold text-slate-700 hover:text-brand hover:bg-red-50/50 rounded-xl transition-all">Technical Stack Blueprint</a>
+                    <a href="#installation" class="block px-3 py-2.5 text-sm font-semibold text-slate-700 hover:text-brand hover:bg-red-50/50 rounded-xl transition-all">Installation & Deployment</a>
+                    <a href="#token-management" class="block px-3 py-2.5 text-sm font-semibold text-slate-700 hover:text-brand hover:bg-red-50/50 rounded-xl transition-all">Admin Token Configuration</a>
+                    <a href="#verification-depth" class="block px-3 py-2.5 text-sm font-semibold text-slate-700 hover:text-brand hover:bg-red-50/50 rounded-xl transition-all">Cryptographic Verification Flow</a>
+                    <a href="#filesystem-structure" class="block px-3 py-2.5 text-sm font-semibold text-slate-700 hover:text-brand hover:bg-red-50/50 rounded-xl transition-all">Simulating File Systems</a>
                 </div>
 
                 <div class="lg:col-span-8 space-y-16">
                     
-                    <div id="quickstart">
-                        <h2 class="text-2xl font-black text-slate-900 mb-2">Technical Stack Blueprint</h2>
-                        <p class="text-slate-600 mb-6 text-sm">The platform architecture uses lightweight, performant compiled layers built entirely without traditional database layers.</p>
-                        <div class="grid sm:grid-cols-2 gap-4 text-xs">
-                            <div class="bg-white p-4 rounded-xl border border-slate-200"><strong class="text-slate-900 block mb-1">Runtime Architecture</strong>Go (Golang) — Memory-safe static binary compilation targeting zero virtual machine processing overhead.</div>
-                            <div class="bg-white p-4 rounded-xl border border-slate-200"><strong class="text-slate-900 block mb-1">Parser Core</strong>goldmark Engine — Fully standardized CommonMark specification compliance.</div>
-                            <div class="bg-white p-4 rounded-xl border border-slate-200"><strong class="text-slate-900 block mb-1">Sanitization Protocol</strong>bluemonday Engine — Rigid user-content extraction tracking preventing cross-site scripting (XSS).</div>
-                            <div class="bg-white p-4 rounded-xl border border-slate-200"><strong class="text-slate-900 block mb-1">Runtime Target</strong>Podman / Docker — Isolated multi-stage Alpine pipeline definitions targeting simple local network orchestration.</div>
+                    <div id="quickstart" class="scroll-mt-24">
+                        <h2 class="text-3xl font-black text-slate-900 mb-3 tracking-tight">Technical Stack Blueprint</h2>
+                        <p class="text-slate-600 mb-6 text-base leading-relaxed">The platform architecture uses lightweight, performant compiled layers built entirely without traditional centralized database layers.</p>
+                        <div class="grid sm:grid-cols-2 gap-5 text-sm">
+                            <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm"><strong class="text-slate-900 block text-base mb-1.5 font-bold">Runtime Architecture</strong>Go (Golang) — Memory-safe static binary compilation targeting zero virtual machine processing overhead.</div>
+                            <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm"><strong class="text-slate-900 block text-base mb-1.5 font-bold">Parser Core</strong>goldmark Engine — Fully standardized CommonMark specification compliance.</div>
+                            <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm"><strong class="text-slate-900 block text-base mb-1.5 font-bold">Sanitization Protocol</strong>bluemonday Engine — Rigid user-content extraction tracking preventing cross-site scripting (XSS).</div>
+                            <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm"><strong class="text-slate-900 block text-base mb-1.5 font-bold">Runtime Target</strong>Podman / Docker — Isolated multi-stage Alpine pipeline definitions targeting simple local network orchestration.</div>
                         </div>
                     </div>
 
-                    <hr class="border-slate-200">
+                    <hr class="border-slate-200/80">
 
-                    <div id="installation">
-                        <h2 class="text-2xl font-black text-slate-900 mb-2">Installation & Deployment Manual</h2>
-                        <p class="text-slate-600 mb-6 text-sm">Ensure your network environment matches basic requirements: Podman or Docker (with Compose V2), Git, and an accessible terminal runner.</p>
+                    <div id="installation" class="scroll-mt-24">
+                        <h2 class="text-3xl font-black text-slate-900 mb-3 tracking-tight">Installation & Deployment Manual</h2>
+                        <p class="text-slate-600 mb-6 text-base leading-relaxed">Ensure your network environment matches basic requirements: Podman or Docker (with Compose V2), Git, and an accessible terminal runner.</p>
 
                         <div class="mb-6">
-                            <span class="text-xs font-bold uppercase tracking-wider text-brand block mb-2"><i class="fab fa-linux"></i> Linux / macOS One-Liner</span>
-                            <div class="bg-slate-900 text-slate-200 p-4 rounded-xl font-mono text-xs shadow-inner overflow-x-auto">
-                                <span class="text-emerald-400"># Installs automated node context instantly</span><br>
-                                <span class="text-brand">curl</span> -sSL https://raw.githubusercontent.com/RED-Collective/red-engine/main/install-red-engine.sh | bash
+                            <span class="text-sm font-bold uppercase tracking-wider text-brand block mb-2"><i class="fab fa-linux"></i> Linux / macOS One-Liner</span>
+                            <div class="relative group bg-slate-900 p-5 rounded-xl border border-slate-800 shadow-lg">
+                                <button onclick="copyToClipboard('linux-cmd', this)" class="absolute top-3 right-3 bg-slate-800 hover:bg-slate-700 text-slate-400 hover:text-white px-3 py-1.5 rounded-lg text-xs font-semibold flex items-center gap-1.5 transition-all active:scale-95 border border-slate-700 z-10" title="Copy code">
+                                    <i class="far fa-copy text-sm"></i> <span>Copy</span>
+                                </button>
+                                <pre class="language-bash"><code id="linux-cmd" class="language-bash"><span class="token comment"># Installs automated node context instantly</span>
+curl -sSL https://raw.githubusercontent.com/RED-Collective/red-engine/main/install-red-engine.sh | bash</code></pre>
                             </div>
                         </div>
 
                         <div class="mb-6">
-                            <span class="text-xs font-bold uppercase tracking-wider text-brand block mb-2"><i class="fab fa-windows"></i> Windows (PowerShell as Administrator)</span>
-                            <div class="bg-slate-900 text-slate-200 p-4 rounded-xl font-mono text-xs shadow-inner overflow-x-auto">
-                                <span class="text-emerald-400">Set-ExecutionPolicy</span> Bypass -Scope Process -Force<br>
-                                <span class="text-brand">iex</span> (irm https://raw.githubusercontent.com/RED-Collective/red-engine/main/install-red-engine.ps1)
+                            <span class="text-sm font-bold uppercase tracking-wider text-brand block mb-2"><i class="fab fa-windows"></i> Windows (PowerShell as Administrator)</span>
+                            <div class="relative group bg-slate-900 p-5 rounded-xl border border-slate-800 shadow-lg">
+                                <button onclick="copyToClipboard('win-cmd', this)" class="absolute top-3 right-3 bg-slate-800 hover:bg-slate-700 text-slate-400 hover:text-white px-3 py-1.5 rounded-lg text-xs font-semibold flex items-center gap-1.5 transition-all active:scale-95 border border-slate-700 z-10" title="Copy code">
+                                    <i class="far fa-copy text-sm"></i> <span>Copy</span>
+                                </button>
+                                <pre class="language-powershell"><code id="win-cmd" class="language-powershell">Set-ExecutionPolicy Bypass -Scope Process -Force
+iex (irm https://raw.githubusercontent.com/RED-Collective/red-engine/main/install-red-engine.ps1)</code></pre>
                             </div>
                         </div>
 
                         <div>
-                            <span class="text-xs font-bold uppercase tracking-wider text-slate-400 block mb-2">Manual Multi-Stage Pipeline Instructions</span>
-                            <div class="bg-slate-900 text-slate-200 p-4 rounded-xl font-mono text-xs shadow-inner space-y-2 overflow-x-auto">
-                                <div><span class="text-slate-500"># 1. Clone Core Binaries</span><br><span class="text-brand">git clone</span> https://github.com/RED-Collective/red-engine.git && <span class="text-brand">cd</span> red-engine</div>
-                                <div><span class="text-slate-500"># 2. Configure Local Settings</span><br><span class="text-brand">cp</span> config.json.example config.json</div>
-                                <div><span class="text-slate-500"># 3. Spin Container Isolation Layers</span><br><span class="text-brand">podman-compose</span> up --build -d <span class="text-slate-400"># Or fallback to docker compose</span></div>
+                            <span class="text-sm font-semibold text-slate-500 block mb-2">Manual Multi-Stage Pipeline Instructions</span>
+                            <div class="relative group bg-slate-900 p-5 rounded-xl border border-slate-800 shadow-lg">
+                                <button onclick="copyToClipboard('manual-cmd', this)" class="absolute top-3 right-3 bg-slate-800 hover:bg-slate-700 text-slate-400 hover:text-white px-3 py-1.5 rounded-lg text-xs font-semibold flex items-center gap-1.5 transition-all active:scale-95 border border-slate-700 z-10" title="Copy code">
+                                    <i class="far fa-copy text-sm"></i> <span>Copy</span>
+                                </button>
+                                <pre class="language-bash"><code id="manual-cmd" class="language-bash"><span class="token comment"># 1. Clone Core Binaries</span>
+git clone https://github.com/RED-Collective/red-engine.git && cd red-engine
+
+<span class="token comment"># 2. Configure Local Settings</span>
+cp config.json.example config.json
+
+<span class="token comment"># 3. Spin Container Isolation Layers</span>
+podman-compose up --build -d <span class="token comment"># Or fallback to docker compose</span></code></pre>
                             </div>
                         </div>
                     </div>
 
-                    <hr class="border-slate-200">
+                    <hr class="border-slate-200/80">
 
-                    <div id="token-management">
-                        <h2 class="text-2xl font-black text-slate-900 mb-2">Admin Token Configuration</h2>
-                        <p class="text-slate-600 mb-4 text-sm">
+                    <div id="token-management" class="scroll-mt-24">
+                        <h2 class="text-3xl font-black text-slate-900 mb-3 tracking-tight">Admin Token Configuration</h2>
+                        <p class="text-slate-600 mb-4 text-base leading-relaxed">
                             The administration console mapped to <code>/-/admin</code> is locked via a unique cryptographically secure <code>adminToken</code> string parsed directly from the environment initialization routine. Use internal system helpers to re-verify or change signatures.
                         </p>
-                        <div class="bg-slate-900 text-slate-200 p-4 rounded-xl font-mono text-xs shadow-inner overflow-x-auto space-y-3">
-                            <div>
-                                <span class="text-slate-500"># Execute token update verification parameters inside Linux/macOS</span><br>
-                                <span class="text-emerald-400">./manage-token.sh</span>
-                            </div>
-                            <div>
-                                <span class="text-slate-500"># Execute token update verification parameters inside Windows PowerShell environments</span><br>
-                                <span class="text-emerald-400">.\manage-token.ps1</span>
-                            </div>
+                        <div class="relative group bg-slate-900 p-5 rounded-xl border border-slate-800 shadow-lg">
+                            <button onclick="copyToClipboard('token-cmd', this)" class="absolute top-3 right-3 bg-slate-800 hover:bg-slate-700 text-slate-400 hover:text-white px-3 py-1.5 rounded-lg text-xs font-semibold flex items-center gap-1.5 transition-all active:scale-95 border border-slate-700 z-10" title="Copy code">
+                                <i class="far fa-copy text-sm"></i> <span>Copy</span>
+                            </button>
+                            <pre class="language-bash"><code id="token-cmd" class="language-bash"><span class="token comment"># Execute token update verification parameters inside Linux/macOS</span>
+./manage-token.sh
+
+<span class="token comment"># Execute token update verification parameters inside Windows PowerShell environments</span>
+.\manage-token.ps1</code></pre>
                         </div>
-                        <p class="text-slate-500 text-xs mt-3">After generating new tokens, ensure you call <code>podman-compose restart red_engine</code> to pass environment parameters directly into the Go system container variables.</p>
+                        <p class="text-slate-500 text-sm mt-3 font-medium">After generating new tokens, ensure you call <code class="bg-slate-200 text-slate-800 px-1.5 py-0.5 rounded border border-slate-300 font-mono text-xs">podman-compose restart red_engine</code> to pass environment parameters directly into the Go system container variables.</p>
                     </div>
 
-                    <hr class="border-slate-200">
+                    <hr class="border-slate-200/80">
 
-                    <div id="verification-depth">
-                        <h2 class="text-2xl font-black text-slate-900 mb-2">Cryptographic Verification Protocols</h2>
-                        <p class="text-slate-600 mb-4 text-sm">
+                    <div id="verification-depth" class="scroll-mt-24">
+                        <h2 class="text-3xl font-black text-slate-900 mb-3 tracking-tight">Cryptographic Verification Protocols</h2>
+                        <p class="text-slate-600 mb-4 text-base leading-relaxed">
                             R.E.D. calculates verification dynamically using <strong>Ed25519</strong> signing operations over standard raw content strings against signatures stored inside isolated <code>manifest.json</code> parameters.
                         </p>
 
-                        <span class="text-xs font-bold text-slate-400 block mb-2">Example Node Vault Manifest Arrangement (manifest.json)</span>
-                        <div class="bg-slate-900 text-slate-200 p-4 rounded-xl font-mono text-xs shadow-inner overflow-x-auto mb-4">
-<pre>{
+                        <span class="text-sm font-bold text-slate-500 block mb-2">Example Node Vault Manifest Arrangement (manifest.json)</span>
+                        <div class="relative group bg-slate-900 p-5 rounded-xl border border-slate-800 shadow-lg mb-6">
+                            <button onclick="copyToClipboard('json-manifest', this)" class="absolute top-3 right-3 bg-slate-800 hover:bg-slate-700 text-slate-400 hover:text-white px-3 py-1.5 rounded-lg text-xs font-semibold flex items-center gap-1.5 transition-all active:scale-95 border border-slate-700 z-10" title="Copy code">
+                                <i class="far fa-copy text-sm"></i> <span>Copy</span>
+                            </button>
+<pre class="language-json"><code id="json-manifest" class="language-json">{
   "relative/path/to/file.md": {
     "file_hash": "20bcee7014ad5cff...",
     "public_key": "66f32e250b0bafb2...",
     "signature": "61dcac5bd139dca0..."
   }
-}</pre>
+}</code></pre>
                         </div>
 
-                        <span class="text-xs font-bold text-slate-400 block mb-2">Request Loop Execution Model</span>
-                        <ol class="list-decimal list-inside text-xs text-slate-600 space-y-2 bg-white p-4 rounded-xl border border-slate-200">
+                        <span class="text-sm font-bold text-slate-500 block mb-2">Request Loop Execution Model</span>
+                        <ol class="list-decimal list-inside text-sm text-slate-600 space-y-3 bg-white p-5 rounded-xl border border-slate-200 shadow-sm leading-relaxed">
                             <li>The engine tracks the active route, maps file location targets, and parses raw markdown text into local tracking chains.</li>
                             <li>The engine calculates the <strong>SHA-256</strong> hash signature block dynamically and compares tracking fields with the manifest keys.</li>
                             <li>If hash matching values match cleanly, the Go runtime performs cross-verification of the Ed25519 payload array utilizing public keys stored inside repository root tracking tables (<code>contributors.json</code>).</li>
-                            <li>Passing metrics automatically generates an inline <span class="inline-flex items-center gap-1 bg-emerald-50 text-emerald-700 px-2 py-0.5 rounded border border-emerald-200 font-bold font-sans">✅ Verified Contributor</span> badge while appending the absolute tracking hash into the template footers for manual operator configuration scans.</li>
+                            <li>Passing metrics automatically generates an inline <span class="inline-flex items-center gap-1 bg-emerald-50 text-emerald-700 px-2 py-0.5 rounded border border-emerald-200 font-bold font-sans text-xs">✅ Verified Contributor</span> badge while appending the absolute tracking hash into the template footers for manual operator configuration scans.</li>
                         </ol>
                     </div>
 
-                    <hr class="border-slate-200">
+                    <hr class="border-slate-200/80">
 
-                    <div id="filesystem-structure">
-                        <h2 class="text-2xl font-black text-slate-900 mb-2">Simulating Decentralized Knowledge Base Structures</h2>
-                        <p class="text-slate-600 mb-4 text-sm">
+                    <div id="filesystem-structure" class="scroll-mt-24">
+                        <h2 class="text-3xl font-black text-slate-900 mb-3 tracking-tight">Simulating Decentralized Knowledge Base Structures</h2>
+                        <p class="text-slate-600 mb-4 text-base leading-relaxed">
                             Rather than enforcing top-down structures that cause configuration validation breakages, Project R.E.D. resolves native filesystem arrangements into active dynamic routing maps directly.
                         </p>
-                        <div class="bg-slate-900 text-slate-200 p-4 rounded-xl font-mono text-xs shadow-inner overflow-x-auto">
-<pre>data/
+                        <div class="relative group bg-slate-900 p-5 rounded-xl border border-slate-800 shadow-lg">
+                            <button onclick="copyToClipboard('tree-structure', this)" class="absolute top-3 right-3 bg-slate-800 hover:bg-slate-700 text-slate-400 hover:text-white px-3 py-1.5 rounded-lg text-xs font-semibold flex items-center gap-1.5 transition-all active:scale-95 border border-slate-700 z-10" title="Copy code">
+                                <i class="far fa-copy text-sm"></i> <span>Copy</span>
+                            </button>
+<pre class="language-text"><code id="tree-structure" class="language-text">data/
 └── remote/
     └── solar-array-build/
         ├── 00-index.md
         ├── 01-wiring-schematics-v1.0.md
-        └── 02-inverter-fusing.md</pre>
+        └── 02-inverter-fusing.md</code></pre>
                         </div>
-                        <p class="text-slate-500 text-xs mt-3">The framework loops the configuration fields and outputs transparent, performant routing sequences visible directly via: <code class="bg-slate-100 text-brand px-1.5 py-0.5 rounded border border-slate-200">http://your-node/remote/solar-array-build/00-index</code></p>
+                        <p class="text-slate-500 text-sm mt-3 font-medium">The framework loops the configuration fields and outputs transparent, performant routing sequences visible directly via: <code class="bg-red-50 text-brand font-semibold px-1.5 py-0.5 rounded border border-red-100 text-xs font-mono">http://your-node/remote/solar-array-build/00-index</code></p>
                     </div>
 
                 </div>
@@ -319,9 +371,7 @@
     <footer class="bg-white border-t border-slate-200 py-8">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
             <div class="flex items-center gap-2">
-                <svg class="w-4 h-4 text-brand" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M50 5 L90 28 L90 72 L50 95 L10 72 L10 28 Z" stroke="currentColor" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
+                <img src="RED-logo.svg" alt="Project R.E.D. Miniature Logo" class="w-4 h-4 min-w-[16px] min-h-[16px] object-contain opacity-60">
                 <span>&copy; 2026 <span class="text-slate-700 font-semibold">Project R.E.D. Collective</span>. Free and open source infrastructure.</span>
             </div>
             <div class="flex items-center space-x-6 font-medium">
@@ -331,6 +381,36 @@
             </div>
         </div>
     </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-bash.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-powershell.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-json.min.js"></script>
+
+    <script>
+        function copyToClipboard(elementId, button) {
+            const textToCopy = document.getElementById(elementId).innerText;
+            
+            navigator.clipboard.writeText(textToCopy).then(() => {
+                const icon = button.querySelector('i');
+                const span = button.querySelector('span');
+                
+                icon.className = 'fas fa-check text-emerald-400';
+                span.innerText = 'Copied!';
+                button.classList.remove('border-slate-700');
+                button.classList.add('border-emerald-500/50', 'bg-slate-800/80');
+
+                setTimeout(() => {
+                    icon.className = 'far fa-copy';
+                    span.innerText = 'Copy';
+                    button.classList.remove('border-emerald-500/50', 'bg-slate-800/80');
+                    button.classList.add('border-slate-700');
+                }, 2000);
+            }).catch(err => {
+                console.error('Failed to copy code block text: ', err);
+            });
+        }
+    </script>
 
 </body>
 </html>
